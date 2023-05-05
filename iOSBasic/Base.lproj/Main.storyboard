@@ -67,6 +67,28 @@
                                     <action selector="onBtn3Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NU2-kh-Ox6"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="입력 해주세요" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YaC-kF-eyD">
+                                <rect key="frame" x="42" y="362" width="200" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ExT-6j-JaL">
+                                <rect key="frame" x="271" y="361" width="88" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.86078917980194092" green="0.23039222685548233" blue="0.20885836571484245" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="입력 완료">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="ontfButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aui-cb-2i1"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="image1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="pmX-aM-GsO">
+                                <rect key="frame" x="71" y="455" width="250" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -75,6 +97,10 @@
                         <outlet property="btn1" destination="maH-h1-gLX" id="ndp-Qs-k4c"/>
                         <outlet property="btn2" destination="tw4-XJ-B90" id="Nly-cb-531"/>
                         <outlet property="btn3" destination="hoy-RI-wPZ" id="vOQ-aa-0lO"/>
+                        <outlet property="image" destination="pmX-aM-GsO" id="rNC-D5-hPy"/>
+                        <outlet property="labelTitle" destination="16z-hR-b6T" id="bMm-Q0-sB4"/>
+                        <outlet property="tfButton" destination="ExT-6j-JaL" id="60S-cu-qzk"/>
+                        <outlet property="tfInput" destination="YaC-kF-eyD" id="jum-5z-MJ4"/>
                         <outletCollection property="buttons" destination="maH-h1-gLX" collectionClass="NSMutableArray" id="aGV-uy-Cjd"/>
                         <outletCollection property="buttons" destination="tw4-XJ-B90" collectionClass="NSMutableArray" id="QSY-CF-CUx"/>
                         <outletCollection property="buttons" destination="hoy-RI-wPZ" collectionClass="NSMutableArray" id="Z3S-Hg-9IB"/>
@@ -86,6 +112,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="image1.jpeg" width="217" height="228"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

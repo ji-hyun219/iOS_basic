@@ -27,3 +27,25 @@ UIKit을 이용한 iOS 앱 제작
 <br />
 <br />
 <br />
+
+---
+
+👇 File > New > File > Cocoa Touch Class 에서 SecondViewController 생성❗️
+
+<br />
+
+<img width="724" alt="스크린샷 2023-05-05 오후 9 14 36" src="https://user-images.githubusercontent.com/91349474/236457708-d516e6e6-8fa8-413a-9e14-89cfa7cdafeb.png">
+
+<br />
+<br />
+<br />
+
+👇 그 다음 스토리보드에서 아이콘 누른 뒤 "show the identity inspector" 클릭해서 다음과 같이 SecondViewController 설정
+
+<br />
+
+<img width="263" alt="스크린샷 2023-05-05 오후 9 30 10" src="https://user-images.githubusercontent.com/91349474/236457928-72ed7447-86fa-4951-8395-a0e6df052ed7.png">
+
+
+
+

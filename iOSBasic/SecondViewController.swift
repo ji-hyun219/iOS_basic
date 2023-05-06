@@ -15,6 +15,13 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var tfData: UITextField!
     @IBOutlet weak var tvData: UITextView!
+    @IBOutlet weak var progressView: UIProgressView!
+    
+    @IBOutlet weak var indicatorView: UIActivityIndicatorView!
+    
+    @IBOutlet weak var slider: UISlider!
+    
+    @IBOutlet weak var stepper: UIStepper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,13 +64,31 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         tvData.text = "세그먼트: " + String(sender.selectedSegmentIndex)
         switch sender.selectedSegmentIndex {
         case 0:
-            print("0이 출력")
+            progressView.progress = 0.3
+            indicatorView.startAnimating()
         case 1:
-            print("1이 출력")
+            progressView.progress = 0.5
+            indicatorView.isHidden = !indicatorView.isHidden
         case 2:
-            print("2이 출력")
+            progressView.progress = 0.9
+            indicatorView.stopAnimating()
         default:
-            print("etc...")
+            progressView.progress = 0
         }
     }
+    
+    
+    @IBAction func onSlider(_ sender: UISlider) {
+        print("슬라이더 변경됨: ", sender.value)
+    }
+    
+    
+    @IBAction func onStepper(_ sender: UIStepper) {
+        print("Stepper 변경됨: ", sender.value)
+        // Stepper 에서 최소, 최대값 지정 가능
+    }
+    
+    
+    
+    
 }

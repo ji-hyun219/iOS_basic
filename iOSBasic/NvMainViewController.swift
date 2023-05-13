@@ -29,6 +29,16 @@
 //  navigationController?.viewControllers 배열에서 추가. insert(at:)
 
 
+// < 뷰 컨트롤러의 수명주기 (Life Cycle) >
+// viewDidLoad : 뷰가 생성될 때 한번만 호출됨. (초기화 용도)
+// viewWillAppear : 뷰가 화면에 보일 때마다 호출됨. (화면 갱신 용도)
+// viewDidAppear : 뷰가 화면에 보이고 나서 매번 호출됨.
+// viewWillDisappear : 뷰가 화면에 사라지기 전마다 호출됨. (데이터 전달)
+// viewDidDisappear : 뷰가 화면에 사라지고 나서 매번 호출됨.
+// viewWillLayoutSubviews : 컨트롤(서브뷰)들의 레이아웃을 잡기 전에 호출됨.
+// viewDidLayoutSubViews : 컨트롤들의 레이아웃을 잡고 나서 호출됨
+
+
 import UIKit
 
 class NvMainViewController: UIViewController {
@@ -37,9 +47,35 @@ class NvMainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print("viewDidLoad")
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        print("viewWillAppear")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        print("viewDidAppear")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        print("viewWillDisappear")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        print("viewDidDisappear")
+    }
+    
+    override func viewWillLayoutSubviews() {
+        print("viewWillLayoutSubviews")
+    }
+    
+    override func viewDidLayoutSubviews() {
+        print("viewDidLayoutSubViews")
+    }
+    
+    
     
 
     // Action 함수 들어가는 곳

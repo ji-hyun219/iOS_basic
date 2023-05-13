@@ -19,6 +19,7 @@
 		438094342A0F664D0060A225 /* NvMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438094332A0F664D0060A225 /* NvMainViewController.swift */; };
 		438094362A0F6D710060A225 /* NvViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438094352A0F6D710060A225 /* NvViewController2.swift */; };
 		438094382A0F6D820060A225 /* NvViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438094372A0F6D820060A225 /* NvViewController3.swift */; };
+		4380943A2A0F81A90060A225 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438094392A0F81A90060A225 /* PopupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		438094332A0F664D0060A225 /* NvMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NvMainViewController.swift; sourceTree = "<group>"; };
 		438094352A0F6D710060A225 /* NvViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NvViewController2.swift; sourceTree = "<group>"; };
 		438094372A0F6D820060A225 /* NvViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NvViewController3.swift; sourceTree = "<group>"; };
+		438094392A0F81A90060A225 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				43249A492A052AC600D54919 /* SecondViewController.swift */,
 				438094332A0F664D0060A225 /* NvMainViewController.swift */,
 				43249A372A04E84900D54919 /* Main.storyboard */,
+				438094392A0F81A90060A225 /* PopupViewController.swift */,
 				438094352A0F6D710060A225 /* NvViewController2.swift */,
 				438094372A0F6D820060A225 /* NvViewController3.swift */,
 				43249A3A2A04E84A00D54919 /* Assets.xcassets */,
@@ -165,6 +168,7 @@
 				438094342A0F664D0060A225 /* NvMainViewController.swift in Sources */,
 				43249A322A04E84900D54919 /* AppDelegate.swift in Sources */,
 				43249A342A04E84900D54919 /* SceneDelegate.swift in Sources */,
+				4380943A2A0F81A90060A225 /* PopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

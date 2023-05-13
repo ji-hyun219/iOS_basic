@@ -85,4 +85,12 @@ class NvMainViewController: UIViewController {
         let NewVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondVC") as! NvViewController2
         self.navigationController?.pushViewController(NewVC, animated: true)
     }
+    
+    
+    @IBAction func onBtnPopup(_ sender: UIButton) {
+        let NewVC = self.storyboard?.instantiateViewController(withIdentifier: "PopupVC") as! PopupViewController
+        self.present(NewVC, animated: true, completion: nil)
+    }
+    
+    
 }

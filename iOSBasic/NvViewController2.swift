@@ -28,6 +28,7 @@ class NvViewController2: UIViewController {
     
     @IBAction func onBtnBack(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
+        appDelegate.mainVC?.mainData = "두번째화면에서 전달한 데이터"
     }
     
 }

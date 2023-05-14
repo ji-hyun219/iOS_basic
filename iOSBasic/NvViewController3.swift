@@ -17,7 +17,8 @@ class NvViewController3: UIViewController {
     
 
     @IBAction func onBtnBack(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+//        self.navigationController?.popViewController(animated: true)
+        self.navigationController?.popToRootViewController(animated: true) // 첫 화면으로 이동
     }
     
 }

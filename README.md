@@ -46,11 +46,6 @@ UIKit을 이용한 iOS 앱 제작
 
 <img width="263" alt="스크린샷 2023-05-05 오후 9 30 10" src="https://user-images.githubusercontent.com/91349474/236457928-72ed7447-86fa-4951-8395-a0e6df052ed7.png">
 
-<br />
-<br />
 
----
-### NEW Projecct 생성 방법
-xcode > create a new Xcode project > setting > iOS_Basic 폴더에 생성해야 함 (주의)
 
 

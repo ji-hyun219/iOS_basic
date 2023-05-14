@@ -39,16 +39,28 @@
 // viewDidLayoutSubViews : 컨트롤들의 레이아웃을 잡고 나서 호출됨
 
 
+
+// < 뷰 컨트롤러 간의 데이터 전달(참조)하는 법 >
+// 1. 전역변수를 이용한다. (앱 내 모든 VC 에서 접근 가능)
+// 2. A 클래스(VC)에서 B 클래스로 데이터 전달
+// 3. B 클래스에서 A 클래스로 데이터 전달
+
+
 import UIKit
 
 class NvMainViewController: UIViewController {
+    // 전역변수를 참조하는 방법
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     
     // Outlet 들어가는 곳
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print("viewDidLoad")
-        // Do any additional setup after loading the view.
+        
+        // 전역변수를 참조하는 곳
+        appDelegate.globalData = "전역변수 설정함"
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -8,11 +8,13 @@
 import UIKit
 
 class NvViewController2: UIViewController {
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // 전역변수를 참조하여 출력함
+        print(appDelegate.globalData)
     }
     
     @IBAction func onBtnNext(_ sender: UIButton) {

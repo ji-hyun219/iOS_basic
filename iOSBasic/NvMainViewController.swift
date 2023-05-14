@@ -51,6 +51,7 @@ import UIKit
 class NvMainViewController: UIViewController {
     // 전역변수를 참조하는 방법
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var mainData : String = ""
     
     
     // Outlet 들어가는 곳
@@ -59,12 +60,15 @@ class NvMainViewController: UIViewController {
         super.viewDidLoad()
         print("viewDidLoad")
         
+        appDelegate.mainVC = self
+        
         // 전역변수를 참조하는 곳
         appDelegate.globalData = "전역변수 설정함"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         print("viewWillAppear")
+        print(self.mainData) // viewWillAppear 에다가 써주면 화면이 나타날 때마다 호출됨(Back 포함)
     }
     
     override func viewDidAppear(_ animated: Bool) {

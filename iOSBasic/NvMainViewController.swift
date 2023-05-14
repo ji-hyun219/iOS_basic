@@ -92,6 +92,17 @@ class NvMainViewController: UIViewController {
 
     // Action 함수 들어가는 곳
     
+    
+    // 네비게이션 컨트롤러에서 Segue 로 이동하기
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toSecondVC" {           // 이것 역시 따로 인터페이스 빌더에서 설정해줘야 함 (댓글 참조)
+            let vc = segue.destination as! NvViewController2
+            vc.secondData = "메인화면에서 전달한 데이터(segue 방식)"
+        }
+    }
+    
+    
+    
     // 네비게이션 컨트롤러에서 코드로 이동하기
     @IBAction func onBtnNext(_ sender: UIButton) {
         let NewVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondVC") as! NvViewController2

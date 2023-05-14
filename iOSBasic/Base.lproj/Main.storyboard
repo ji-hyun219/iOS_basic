@@ -247,7 +247,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sugue 로 이동하기"/>
                                 <connections>
-                                    <segue destination="SNf-Mz-Jj9" kind="show" id="u5y-IX-BJP"/>
+                                    <segue destination="SNf-Mz-Jj9" kind="show" identifier="toSecondVC" id="u5y-IX-BJP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5z-OX-baj">

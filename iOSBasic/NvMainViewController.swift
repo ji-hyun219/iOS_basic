@@ -95,6 +95,7 @@ class NvMainViewController: UIViewController {
     // 네비게이션 컨트롤러에서 코드로 이동하기
     @IBAction func onBtnNext(_ sender: UIButton) {
         let NewVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondVC") as! NvViewController2
+        NewVC.secondData = "메인화면에서 전달한 데이터"
         self.navigationController?.pushViewController(NewVC, animated: true)
     }
     

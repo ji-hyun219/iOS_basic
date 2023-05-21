@@ -5,11 +5,22 @@
 //  Created by 이지현 on 2023/05/14.
 //
 
+
+struct UserInfo {
+    var id: String = ""
+    var pw: String = ""
+    var name: String = ""
+    var phone: String = ""
+}
+
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    // 전역변수가 들어가는 곳
+    var isLogin: Bool = false
+    var isAgree: Bool = false
+    var userInfo : UserInfo = UserInfo()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

@@ -76,10 +76,10 @@
             </objects>
             <point key="canvasLocation" x="1878.6259541984732" y="691.54929577464793"/>
         </scene>
-        <!--View Controller-->
+        <!--Fourth View Controller-->
         <scene sceneID="Xjn-L7-iDm">
             <objects>
-                <viewController id="jl3-Q5-E8h" sceneMemberID="viewController">
+                <viewController id="jl3-Q5-E8h" customClass="FourthViewController" customModule="Tabbar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u5S-2Y-U66">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="47" y="819"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--My Tab Bar Controller-->
         <scene sceneID="jBU-X0-esg">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="o3U-cK-DxB" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="o3U-cK-DxB" customClass="MyTabBarController" customModule="Tabbar" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Bq-0M-Zc2">
                         <autoresizingMask key="autoresizingMask"/>

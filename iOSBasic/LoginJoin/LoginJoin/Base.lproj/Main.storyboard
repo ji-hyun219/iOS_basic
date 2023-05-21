@@ -172,12 +172,18 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J3m-7h-DT5">
                                 <rect key="frame" x="214" y="365" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="onSwitchChanged:" destination="yPU-HC-b5T" eventType="valueChanged" id="TwN-BI-bcn"/>
+                                </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFL-eE-GDs">
                                 <rect key="frame" x="170" y="451" width="54" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="완료"/>
+                                <connections>
+                                    <action selector="onBtnDone:" destination="yPU-HC-b5T" eventType="touchUpInside" id="G33-Yi-3a7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0hb-yl-sG2"/>
@@ -233,6 +239,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="회원가입하기"/>
+                                <connections>
+                                    <action selector="onBtnJoin:" destination="RoO-Fh-AZz" eventType="touchUpInside" id="ApC-na-GOe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1et-ac-e6p">
                                 <rect key="frame" x="135" y="607" width="113" height="35"/>
@@ -248,6 +257,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="jkX-zY-gjk"/>
+                    <connections>
+                        <outlet property="tfID" destination="hSM-9l-dT5" id="zjp-Cv-dFF"/>
+                        <outlet property="tfName" destination="YI1-I4-QZF" id="D7x-bu-e0q"/>
+                        <outlet property="tfPW" destination="NX5-kR-GUM" id="v5I-YY-JHc"/>
+                        <outlet property="tfPhone" destination="yGh-a1-E65" id="aLh-MW-65L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dl0-AK-KP1" sceneMemberID="firstResponder"/>
             </objects>

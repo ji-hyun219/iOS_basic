@@ -13,6 +13,8 @@
 		43AB5B402A19AA7B00DA21F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43AB5B3E2A19AA7B00DA21F4 /* Main.storyboard */; };
 		43AB5B422A19AA7C00DA21F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43AB5B412A19AA7C00DA21F4 /* Assets.xcassets */; };
 		43AB5B452A19AA7C00DA21F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43AB5B432A19AA7C00DA21F4 /* LaunchScreen.storyboard */; };
+		43AB5B4D2A19BBCB00DA21F4 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AB5B4C2A19BBCB00DA21F4 /* FourthViewController.swift */; };
+		43AB5B4F2A19BCBC00DA21F4 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43AB5B4E2A19BCBC00DA21F4 /* MyTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		43AB5B412A19AA7C00DA21F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43AB5B442A19AA7C00DA21F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43AB5B462A19AA7C00DA21F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43AB5B4C2A19BBCB00DA21F4 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		43AB5B4E2A19BCBC00DA21F4 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				43AB5B382A19AA7B00DA21F4 /* AppDelegate.swift */,
+				43AB5B4E2A19BCBC00DA21F4 /* MyTabBarController.swift */,
 				43AB5B3A2A19AA7B00DA21F4 /* SceneDelegate.swift */,
 				43AB5B3C2A19AA7B00DA21F4 /* MainViewController.swift */,
+				43AB5B4C2A19BBCB00DA21F4 /* FourthViewController.swift */,
 				43AB5B3E2A19AA7B00DA21F4 /* Main.storyboard */,
 				43AB5B412A19AA7C00DA21F4 /* Assets.xcassets */,
 				43AB5B432A19AA7C00DA21F4 /* LaunchScreen.storyboard */,
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43AB5B4D2A19BBCB00DA21F4 /* FourthViewController.swift in Sources */,
 				43AB5B3D2A19AA7B00DA21F4 /* MainViewController.swift in Sources */,
 				43AB5B392A19AA7B00DA21F4 /* AppDelegate.swift in Sources */,
 				43AB5B3B2A19AA7B00DA21F4 /* SceneDelegate.swift in Sources */,
+				43AB5B4F2A19BCBC00DA21F4 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

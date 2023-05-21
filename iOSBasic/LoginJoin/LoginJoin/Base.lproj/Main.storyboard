@@ -37,9 +37,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그아웃"/>
+                                <connections>
+                                    <action selector="onBtnLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bnJ-5j-3qT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="로그인 상태: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iyz-Y1-Lbf">
-                                <rect key="frame" x="34" y="228" width="125" height="30"/>
+                                <rect key="frame" x="34" y="228" width="328" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
@@ -50,10 +53,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="MMt-Al-xoS"/>
+                    <connections>
+                        <outlet property="labelStatus" destination="Iyz-Y1-Lbf" id="0ZZ-aa-xbx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1022" y="4"/>
+            <point key="canvasLocation" x="1020.6106870229007" y="3.5211267605633805"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OOi-gP-5pw">
@@ -105,6 +111,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="로그인"/>
+                                <connections>
+                                    <action selector="onBtnLogin:" destination="sJS-D6-Ihb" eventType="touchUpInside" id="N9I-y1-cME"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F02-IO-EFF">
                                 <rect key="frame" x="160" y="485" width="83" height="35"/>
@@ -120,6 +129,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kv4-uY-Hiq"/>
+                    <connections>
+                        <outlet property="tfID" destination="vbL-IB-ZcH" id="Efb-vb-AQC"/>
+                        <outlet property="tfPW" destination="vRy-i3-cWd" id="3Fj-8O-tKU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f2F-z8-ZWX" sceneMemberID="firstResponder"/>
             </objects>

@@ -96,3 +96,14 @@ UIKit을 이용한 iOS 앱 제작
 ### 예제3
 
 <img width="511" alt="스크린샷 2023-05-30 오후 9 57 53" src="https://github.com/ji-hyun219/ji-hyun219/assets/91349474/c5b02394-14b4-4169-a285-c9538d0c8cc8">
+
+<br />
+<br />
+<br />
+
+### 서드파티 라이브러리 사용
+1. 반드시 현재 프로젝트 닫고, Pod init
+2. 닫은 상태에서 pod install -> Podfile.lock 생성된 것 확인
+3. 터미널에서 open 프로젝트이름.xcworkspace
+4. 라이브러리 작성 후 터미널에서 pod install
+

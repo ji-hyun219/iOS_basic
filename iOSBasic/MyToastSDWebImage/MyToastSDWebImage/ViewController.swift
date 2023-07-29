@@ -34,8 +34,19 @@ import Toast_Swift
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.makeToast("토스트 창입니다.", duration: 5.0, position: .bottom)
+        
+        let url: URL = URL(string: "https://image.utoimage.com/preview/cp872722/2022/12/202212008462_206.jpg")!
+        
+        self.imageView.sd_setImage(with: url) { image, error, cacheType, imgUrl in
+            print(imgUrl!)
+        }
+        
         
     }
 

@@ -101,9 +101,66 @@ UIKit을 이용한 iOS 앱 제작
 <br />
 <br />
 
+---
+
 ### 서드파티 라이브러리 사용
-1. 반드시 현재 프로젝트 닫고, Pod init
+1. 반드시 현재 프로젝트 닫고, Pod init (Pod init 을 안하면 No Podfile.. 에러가 뜸)
 2. 닫은 상태에서 pod install -> Podfile.lock 생성된 것 확인
-3. 터미널에서 open 프로젝트이름.xcworkspace
+3. 터미널에서 `open 프로젝트이름.xcworkspace`
 4. 라이브러리 작성 후 터미널에서 pod install
+
+<br />
+
+---
+
+### extension
+- extension 을 쓰는 이유는 외부 라이브러리나 프레임워크를 가져다 사용했다면 원본 소스를 수정하지 못한다.
+- 이처럼 외부에서 가져온 타입에 내가 원하는 기능을 추가하고자 할 때 익스텐션을 사용한다.
+- 타입에 새로운 기능을 추가할 수는 있지만, 기존 새로운 기능을 재정의(override) 할 수는 없다.
+
+```swift
+extension 확장할 타입이름 {
+     //타입에 추가될 새로운 기능 구현
+}
+```
+
+<br />
+
+```swift
+extension 확장할 타입 이름: 프로토콜1, 프로토콜2, 프로토콜3 {
+     //프로토콜 요구사항 구현
+}
+```
+<br />
+
+```swift
+extension Double {
+		// 인스턴스 자신에 1000 곱하기
+    var km: Double { return self * 1_000.0 }  
+    var m: Double { return self }
+    var cm: Double { return self / 100.0 }
+    var mm: Double { return self / 1_000.0 }
+    var ft: Double { return self / 3.28084 }
+}
+
+let oneInch = 25.4.mm
+// 1인치는 0.0254 미터"
+print("1인치는 \(oneInch) 미터")      
+
+let threeFeet = 3.ft
+// 3피트는 0.914399970739201 미터"
+print("3피트는 \(threeFeet) 미터")   
+```
+
+
+
+
+
+
+
+
+
+
+
+
 

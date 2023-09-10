@@ -29,7 +29,28 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(NoticeVC, animated: true)
         
     }
+    
 
 
 }
 
+
+import SideMenu
+
+extension ViewController: SideMenuNavigationControllerDelegate {
+    func sideMenuWillAppear(menu: SideMenuNavigationController, animated: Bool) {
+        print("sideMenuWillAppear")
+    }
+    
+    func sideMenuDidAppear(menu: SideMenuNavigationController, animated: Bool) {
+        print("sideMenuDidAppear")
+    }
+    
+    func sideMenuWillDisappear(menu: SideMenuNavigationController, animated: Bool) {
+        print("sideMenuWillDisappear")
+    }
+    
+    func sideMenuDidDisappear(menu: SideMenuNavigationController, animated: Bool) {
+        print("sideMenuDidDisappear")
+    }
+}

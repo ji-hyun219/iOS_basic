@@ -15,6 +15,9 @@
 		430954632AADA44B0050ECFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 430954622AADA44B0050ECFC /* Assets.xcassets */; };
 		430954662AADA44B0050ECFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 430954642AADA44B0050ECFC /* LaunchScreen.storyboard */; };
 		430954742AADAB840050ECFC /* MySideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430954732AADAB840050ECFC /* MySideMenuNavigationController.swift */; };
+		430954762AADAFD80050ECFC /* SidemenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430954752AADAFD80050ECFC /* SidemenuViewController.swift */; };
+		430954782AADB5FC0050ECFC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430954772AADB5FC0050ECFC /* LoginViewController.swift */; };
+		4309547A2AADB6150050ECFC /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430954792AADB6150050ECFC /* NoticeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		430954652AADA44B0050ECFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		430954672AADA44B0050ECFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		430954732AADAB840050ECFC /* MySideMenuNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySideMenuNavigationController.swift; sourceTree = "<group>"; };
+		430954752AADAFD80050ECFC /* SidemenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidemenuViewController.swift; sourceTree = "<group>"; };
+		430954772AADB5FC0050ECFC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		430954792AADB6150050ECFC /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
 		F3C91BED805126F40C9985DA /* Pods_sideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A95C0AE78243C6E2BE35EE /* Pods-sideMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sideMenu.debug.xcconfig"; path = "Target Support Files/Pods-sideMenu/Pods-sideMenu.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +93,9 @@
 				4309545B2AADA44A0050ECFC /* SceneDelegate.swift */,
 				4309545D2AADA44A0050ECFC /* ViewController.swift */,
 				4309545F2AADA44A0050ECFC /* Main.storyboard */,
+				430954772AADB5FC0050ECFC /* LoginViewController.swift */,
+				430954792AADB6150050ECFC /* NoticeViewController.swift */,
+				430954752AADAFD80050ECFC /* SidemenuViewController.swift */,
 				430954622AADA44B0050ECFC /* Assets.xcassets */,
 				430954642AADA44B0050ECFC /* LaunchScreen.storyboard */,
 				430954672AADA44B0050ECFC /* Info.plist */,
@@ -209,7 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430954782AADB5FC0050ECFC /* LoginViewController.swift in Sources */,
+				430954762AADAFD80050ECFC /* SidemenuViewController.swift in Sources */,
 				4309545E2AADA44A0050ECFC /* ViewController.swift in Sources */,
+				4309547A2AADB6150050ECFC /* NoticeViewController.swift in Sources */,
 				4309545A2AADA44A0050ECFC /* AppDelegate.swift in Sources */,
 				4309545C2AADA44A0050ECFC /* SceneDelegate.swift in Sources */,
 				430954742AADAB840050ECFC /* MySideMenuNavigationController.swift in Sources */,

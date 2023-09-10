@@ -152,15 +152,83 @@ let threeFeet = 3.ft
 print("3피트는 \(threeFeet) 미터")   
 ```
 
+<br />
+<br />
+<br />
 
+---
+### SwiftyJSON
 
+```swift
+.responseJSON(completionHandler: { // 클로저
+                (response) in
+                print(response)
+                
+                // JSON 결괏값을 파싱해서 사용하자!
+                self.parseJson(response) // 클로저에서 외부 변수 및 함수 접근 시, self 사용 (아래 바로 parseJson 참고)
+            })
+```
 
+```swift
+func parseJson(_ response: DataResponse<Any>) {
 
+        //  _ (underscore)는 Swift에서 함수 또는 메서드의 매개변수에 대한 외부 이름(external parameter name)을 제공하지 않기 위해 사용됩니다.
+            
+        // Swift에서 함수나 메서드를 정의할 때, 각 매개변수는 내부 이름(internal parameter name)과 외부 이름(external parameter name)을 가질 수 있습니다. 외부 이름은 함수나 메서드를 호출할 때 사용되며, 내부 이름은 함수나 메서드의 본문 내에서 해당 매개변수를 참조할 때 사용됩니다
+            
+        // ex1
+//            func greet(name: String, age: Int) {
+//                print("Hello, \(name)! You are \(age) years old.")
+//            }
+//
+//            greet(name: "Alice", age: 30)
+            
+            
+        // ex2
+//            func greet(_ name: String, age: Int) {
+//                print("Hello, \(name)! You are \(age) years old.")
+//            }
+//
+//            greet("Alice", age: 30)
+```
+- 클로저의 외부 함수 접근은 self. 로 접근해야 한다
+- underscore 를 쓰면 namedparameters 를 안쓴다는 뜻
 
+<br />
 
+```swift
+if let json = try? JSON(data: response.data!) {
+                    let result = json["login_result"]["result"].string
+                    print(result!)
+                    self.textview.text.append("\n\(result!)")
 
+//       try? ->   오류 발생시 nil 반환: try?를 사용하면 함수나 메서드에서 오류가 발생하면 해당 함수나 메서드는 nil을 반환합니다. 이를 통해 성공적으로 완료된 경우와 오류 발생 경우를 옵셔널 바인딩 (if let 또는 guard let)을 통해 간단하게 구분할 수 있습니다.
+                
+//                여기서 try?를 사용하면 JSON(data:) 초기화자에서 오류가 발생할 경우 json은 nil이 됩니다. 따라서 if let 구문 내부의 코드는 오류가 발생하지 않았을 때만 실행됩니다. 오류가 발생하면 if let 내부의 코드는 실행되지 않습니다.
+                
+                
+                
+                // < if let 과 guard let 의 차이 >
+//                func exampleFunction(optionalValue: String?) {
+//                    // if let 사용
+//                    if let value = optionalValue {
+//                        print("Value is \(value)")
+//                    }
+//
+//                    // guard let 사용
+//                    guard let guardedValue = optionalValue else {
+//                        print("No value found!")
+//                        return
+//                    }
+//                    print("Guarded value is \(guardedValue)")
+//                }
+                
+//                if let: 옵셔널이 nil이 아닌 경우, if let 내부의 코드 블럭이 실행됩니다. 옵셔널이 nil인 경우, 해당 블럭을 건너뜁니다.
+//                guard let: 옵셔널이 nil인 경우, else 절이 실행되고 현재 범위(scope)에서 빠져나오게 됩니다. (예: 함수에서 return, 루프에서 break 등)
+```
 
-
+- try? 는 오류를 반환하면 nil 로 리턴한다는 뜻이다.
+- if let 과 guard let 의 차이
 
 
 

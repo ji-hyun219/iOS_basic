@@ -91,6 +91,18 @@ class ViewController: UIViewController {
                     let login_message = json["login_result"]["login_data"]["message"].string
                     print(login_message!)
                     self.textview.text.append("\n\(login_message!)")
+                    
+                    // 배열을 가져올 때
+                    let arrayData = json["login_result"]["list"].array
+                    for data in arrayData! {
+                        let name = data["name"].string
+                        print(name!)
+                        self.textview.text.append("\n\(name!)")
+                        
+                        let height = data["height"].string
+                        print(height!)
+                        self.textview.text.append("\n\(height!)")
+                    }
                 }
                 
 //       try? ->   오류 발생시 nil 반환: try?를 사용하면 함수나 메서드에서 오류가 발생하면 해당 함수나 메서드는 nil을 반환합니다. 이를 통해 성공적으로 완료된 경우와 오류 발생 경우를 옵셔널 바인딩 (if let 또는 guard let)을 통해 간단하게 구분할 수 있습니다.

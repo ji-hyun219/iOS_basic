@@ -231,4 +231,14 @@ if let json = try? JSON(data: response.data!) {
 - if let 과 guard let 의 차이
 
 
+---
+### extenstion
+<img width="522" alt="스크린샷 2024-01-01 오후 4 34 11" src="https://github.com/ji-hyun219/iOS_basic/assets/99167999/31a78eb3-c790-49e0-83cd-3b51defc2358">
+
+tableView 를 사용하기 위해서는 delegate 와 datasource 가 있는데 datasource 를 사용해보자.
+이때 datasource 를 사용하기 위해선 `tableView.dataSource = self` 를 적으면 위처럼 `UITableViewDataSource` 를 같이 추가해야 하고 `func` 2개도 자동완성된다.
+위처럼 구현할 수도 있지만 보통은 아래처럼 ViewController 를 extenstion 하여 UITableViewDataSource 를 따로 빼주는 것 같다.
+
+<img width="757" alt="스크린샷 2024-01-01 오후 5 01 20" src="https://github.com/ji-hyun219/iOS_basic/assets/99167999/02b62d81-b1e9-458d-acbe-caf6170384fd">
+
 
